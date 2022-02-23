@@ -13,7 +13,7 @@ import { Navigator } from "./src/navigation/Navigator";
   return (
     <QueryClientProvider client={new QueryClient}>
       <Navigator/>
-    
+      
     </QueryClientProvider>
   );
 }
