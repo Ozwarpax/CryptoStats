@@ -20,7 +20,7 @@ export const CoinCapFeed =()=>{
 
   const renderItem = ({ item }: any) => <CardItem {...item} />;
   
-  console.log(data.data[1].id);
+ 
   
   return (
     <SafeAreaView style={styles.safeContainer}>

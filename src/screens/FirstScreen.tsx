@@ -38,12 +38,13 @@ const handleFeed =()=> {
       <View style={styles.bar1}>
         <View style={styles.bar2}></View> 
         <View style={styles.bar6}></View>
-      
       </View>
        <View style={styles.bar3}></View>
       <View style={styles.bar4}></View>
       <View style={styles.bar5}></View>
+      <TouchableOpacity onPress={handleFeed}>
       <Text style={styles.titreW}>CryptoStats</Text>
+      </TouchableOpacity>
      </View>  
 
   </View>
@@ -106,6 +107,7 @@ const styles = StyleSheet.create({
     color: "black",
     fontSize: 45,
     paddingLeft: 70,
+    backgroundColor:"white",
   },
   titreW: {
     color: "white",
