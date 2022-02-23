@@ -13,7 +13,7 @@ npm i
 npm start
 ```
 
-Api I choose
+The Api :
 
 https://docs.coincap.io/
 
