@@ -30,10 +30,6 @@ export const CoinCapFeed =()=>{
         renderItem={renderItem}
         keyExtractor={item => item.id}
       />
-      {/* <View style={styles.container}>
-        <Text>{JSON.stringify(data.results[0].name)}</Text>
-
-      </View> */}
     </SafeAreaView>
   );
 };

@@ -14,11 +14,10 @@ type Props = {}
 export const Navigator = (props: Props) => {
   const Stack = createNativeStackNavigator();
   return (
-    <NavigationContainer>
-    <Stack.Navigator>
+    <NavigationContainer >
+    <Stack.Navigator screenOptions={{ headerShown: false }} >
       <Stack.Screen name={Routes.FIRST_SCREEN} component={FirstScreen} />
       <Stack.Screen  name={Routes.COINCAP_FEED_SCREEN} component={CoinCapFeed}  />
-      {/* <Stack.Screen  name={Routes.STARSHIP_DETAIL_SCREEN} component={StarshipDetailScreen}  /> */}
     </Stack.Navigator>
   </NavigationContainer>
   )

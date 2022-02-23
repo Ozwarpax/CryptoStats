@@ -4,7 +4,6 @@ import { Button, Card, Paragraph, Title } from "react-native-paper";
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { Routes } from "../navigation/Routes";
 import { UseCoinCap } from "../hooks/UseCoinCap";
-//import { Routes } from "../navigation/Routes";
 
 interface Items {
     id:string
@@ -22,12 +21,10 @@ const CardItem = (props: Items) => {
   
     const navigation = UseCoinCap()
   
-    const handlePress=()=> (
-      navigation.navigate(Routes.COINCAP_FEED_SCREEN)
-    )
+
  
     return (
-      <TouchableOpacity onPress={handlePress}>
+
       <Card style={styles.card}>
 
         <Card.Title titleStyle={styles.text} title={props.name} subtitleStyle={styles.text} subtitle={props.rank} />
@@ -38,7 +35,7 @@ const CardItem = (props: Items) => {
         </Card.Content>
 
       </Card>
-      </TouchableOpacity>
+
     );
   };
   
