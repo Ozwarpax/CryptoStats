@@ -7,6 +7,7 @@ https://expo.dev/@jeremy_iut/CryptoStats
 
 
 To launch the project :
-
-npm 
+```text
+npm i 
 npm start
+```
