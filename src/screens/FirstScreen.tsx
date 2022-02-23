@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import {
   StyleSheet,
@@ -9,21 +10,30 @@ import {
 import { UseCoinCap } from "../hooks/UseCoinCap";
 import { Routes } from "../navigation/Routes";
 
-const navigation = UseCoinCap()
+export default function FirstScreen() {
+  
+const result = UseCoinCap()
+
+
+console.log(result)
+
+const navigation = useNavigation();
 
 const handleFeed =()=> {
 
   navigation.navigate(Routes.COINCAP_FEED_SCREEN)
 
 };
-export default function FirstPage() {
   return (
     <View style={styles.container}>
-     <TouchableOpacity onPress={handleFeed}>
+     
     <View style={styles.haut} >
 
     </View>
+
+    <TouchableOpacity onPress={handleFeed}>
     <Text style={styles.titreB}>CryptoStats</Text>
+    </TouchableOpacity>
     <View style={styles.bas}>
       <View style={styles.bar1}>
         <View style={styles.bar2}></View> 
@@ -35,7 +45,7 @@ export default function FirstPage() {
       <View style={styles.bar5}></View>
       <Text style={styles.titreW}>CryptoStats</Text>
      </View>  
-     </TouchableOpacity>
+
   </View>
   );
 }

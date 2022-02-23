@@ -1,5 +1,5 @@
 export enum Routes {
-    FIRST_PAGE = "First",
+    FIRST_SCREEN = "FirstSreen",
     COINCAP_FEED_SCREEN = "Coincaps",
   }
   
